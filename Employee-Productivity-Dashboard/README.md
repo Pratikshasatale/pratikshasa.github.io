@@ -18,5 +18,5 @@ Analyzed employee productivity using behavioral and facial emotion tracking data
 - Data Visualization
 
 ## 🖼 Dashboard Preview
-![Productivity Overview](screenshots/overview.png)
-![Behavior Analysis](screenshots/analysis.png)
+![Productivity Overview](screenshots/EmpPerformance.png)
+![Ranking Analysis](screenshots/Ranking.png)
