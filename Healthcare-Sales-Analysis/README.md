@@ -3,4 +3,4 @@
 Sales and product performance analysis dashboard for healthcare instruments.
 
 **Client:** Aenricon Healthcare Instruments  
-**Tools:** Power BI
+**Tools:** Power BI SQL WOrkbench
