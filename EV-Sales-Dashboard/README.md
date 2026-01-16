@@ -5,7 +5,9 @@
 This Power BI dashboard analyzes Electric Vehicle (EV) sales performance across India to identify growth trends, top manufacturers, and high-performing states.
 
 ## 🔗 Live Dashboard
-👉 https://app.powerbi.com/view?r=PASTE_YOUR_LIVE_LINK_HERE
+👉 **[View Interactive Power BI Report](https://app.powerbi.com/view?r=eyJrIjoiOGIwZDQ2MjgtZDIzMS00YmNhLThhODQtOWM0YjE5NWQyMTE0IiwidCI6ImU2YjdmNGQ3LTAyNGQtNDA1MS05NWM5LTM5MGVjZTFmYmFhMCJ9)**
+
+
 
 ## 📊 Key Insights
 - Revenue Growth % and CAGR analysis of EV manufacturers
