@@ -23,14 +23,15 @@ This Power BI dashboard analyzes Electric Vehicle (EV) sales performance across 
 
 ## 🖼 Dashboard Screenshots
 
-### Overview
-![Overview](screenshots/Overview.png)
-
 ### Home Page
 ![Home](screenshots/Home%20Page.png)
+
+### Overview
+![Overview](screenshots/Overview.png)
 
 ### Makers Wise Sales
 ![Makers](screenshots/Makers%20Wise%20Sales.png)
 
 ### State Wise Sales
 ![State](screenshots/State%20wise%20Sales.png)
+
