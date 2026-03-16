@@ -13,7 +13,7 @@ and logistics.
 ![Inventory](screenshots/Orders.png)
 
 ### 3. Fullfilment KPI Performance
-![Fullfilment ](Fullfilment.png)
+![Fullfilment ](screenshots/Fullfilment.png)
 
 ### 4. GMV Analysis
 ![Finance](screenshots/Finance.png)
