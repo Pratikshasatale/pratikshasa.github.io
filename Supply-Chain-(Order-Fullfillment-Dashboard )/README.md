@@ -3,7 +3,7 @@
 ## 📌 Project Overview
 A Power BI dashboard analyzing supply chain performance including inventory, suppliers, and logistics.
 ## 🔗 Live Dashboard
-👉 [Click here to view the live Power BI dashboard](https://app.powerbi.com/reportEmbed?reportId=cd4ec28f-db55-4c3c-8f3b-c05c4fc3dedf&autoAuth=true&ctid=66b1ab0e-93ce-4dcb-a1c9-5645b0675d8e)
+👉 [Click here to view the live Power BI dashboard](https://app.powerbi.com/view?r=eyJrIjoiYWY2MmJhYzEtMDM2Yy00MTQwLWJmYTMtNzdlYTM2NzRmYjZiIiwidCI6IjY2YjFhYjBlLTkzY2UtNGRjYi1hMWM5LTU2NDViMDY3NWQ4ZSJ9)
 
 ## 📊 Dashboard Pages
 ### 1. Overview
