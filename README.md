@@ -32,6 +32,13 @@ Dashboard analyzing employee productivity using behavioral and emotion-based met
 
 ---
 
+## 🥉 Supply Chain Order Fullfilment Analysis Dashboard
+**Supply Chain Industry Project**  
+
+Dashboard analyzing employee productivity using behavioral and emotion-based metrics.
+
+👉 [View Project](Supply-Chain-(Order-Fullfillment-Dashbord)
+
 ## 🛠 Tools & Skills
 - Power BI & SQL Workbench
 - DAX
