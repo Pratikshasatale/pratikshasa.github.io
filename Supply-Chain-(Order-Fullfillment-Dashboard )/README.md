@@ -12,11 +12,11 @@ and logistics.
 ### 2. Inventory Analysis
 ![Inventory](screenshots/Orders.png)
 
-### 3. Supplier Performance
-![Supplier](Fullfillment.png)
+### 3. Fullfilment KPI Performance
+![Fullfilment ](Fullfilment.png)
 
-### 4. Logistics
-![Logistics](screenshots/Finance.png)
+### 4. GMV Analysis
+![Finance](screenshots/Finance.png)
 
 ## 🛠 Tools Used
 - Power BI Desktop
