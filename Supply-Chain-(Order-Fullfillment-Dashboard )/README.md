@@ -7,16 +7,16 @@ and logistics.
 
 ## 📊 Dashboard Pages
 ### 1. Overview
-![Overview](screenshots/1.png)
+![Overview](screenshots/Overview.png)
 
 ### 2. Inventory Analysis
-![Inventory](screenshots/2.png)
+![Inventory](screenshots/Orders.png)
 
 ### 3. Supplier Performance
-![Supplier](33.png)
+![Supplier](Fullfillment.png)
 
 ### 4. Logistics
-![Logistics](screenshots/4.png)
+![Logistics](screenshots/Finance.png)
 
 ## 🛠 Tools Used
 - Power BI Desktop
