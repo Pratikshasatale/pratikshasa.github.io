@@ -37,7 +37,7 @@ Dashboard analyzing employee productivity using behavioral and emotion-based met
 
 Dashboard analyzing employee productivity using behavioral and emotion-based metrics.
 
-👉 [View Project](Supply-Chain-(Order-Fullfillment-Dashboard ))
+👉 [View Project](Supply-Chain-(Order-Fullfillment-Dashboard )
 
 ## 🛠 Tools & Skills
 - Power BI & SQL Workbench
