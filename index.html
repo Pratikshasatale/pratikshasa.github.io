@@ -2,145 +2,471 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Pratiksha Satale | Consultant Data Analyst</title>
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pratiksha Satale | Power BI Data Analyst</title>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
   <style>
+    :root {
+      --bg: #0a0a0f;
+      --surface: #13131a;
+      --card: #1a1a24;
+      --card-hover: #1f1f2e;
+      --border: rgba(255,255,255,0.07);
+      --accent: #f0c040;
+      --accent2: #7c6af7;
+      --text: #e8e8f0;
+      --muted: #7a7a9a;
+      --tag-bg: rgba(124,106,247,0.15);
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
     body {
-      font-family: "Segoe UI", Tahoma, Arial, sans-serif;
-      background-color: #f4f6f9;
-      margin: 0;
-      padding: 0;
-      color: #333;
+      font-family: 'DM Sans', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+
+    /* Subtle background texture */
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background:
+        radial-gradient(ellipse 80% 50% at 10% 0%, rgba(124,106,247,0.08) 0%, transparent 60%),
+        radial-gradient(ellipse 60% 40% at 90% 100%, rgba(240,192,64,0.05) 0%, transparent 50%);
+      pointer-events: none;
+      z-index: 0;
     }
 
     .container {
-      max-width: 960px;
-      margin: auto;
-      padding: 40px 20px;
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 32px;
+      position: relative;
+      z-index: 1;
     }
 
-    h1 {
-      color: #1f2937;
-      margin-bottom: 5px;
+    /* ── HEADER ── */
+    header {
+      padding: 64px 0 48px;
+      display: flex;
+      align-items: flex-start;
+      gap: 32px;
     }
 
-    h2 {
-      color: #2563eb;
-      margin-top: 40px;
-      border-bottom: 2px solid #e5e7eb;
-      padding-bottom: 6px;
+    .avatar {
+      width: 64px;
+      height: 64px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--accent2), var(--accent));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Syne', sans-serif;
+      font-weight: 800;
+      font-size: 22px;
+      color: #fff;
+      flex-shrink: 0;
+      margin-top: 4px;
     }
 
-    p {
-      font-size: 16px;
-      line-height: 1.6;
-      color: #4b5563;
+    .header-text h1 {
+      font-family: 'Syne', sans-serif;
+      font-weight: 800;
+      font-size: clamp(28px, 5vw, 42px);
+      letter-spacing: -0.02em;
+      line-height: 1.1;
+      color: #fff;
     }
 
-    .skills {
-      background: #ffffff;
-      padding: 20px;
-      border-radius: 8px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-      margin-top: 20px;
+    .header-text h1 span {
+      color: var(--accent);
     }
 
-    .project {
-      background: #ffffff;
-      padding: 20px;
-      margin-top: 20px;
-      border-radius: 8px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    .role-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      margin-top: 10px;
+      padding: 6px 14px;
+      background: var(--tag-bg);
+      border: 1px solid rgba(124,106,247,0.3);
+      border-radius: 100px;
+      font-size: 13px;
+      color: #a89ff7;
+      font-weight: 500;
     }
 
-    .project h3 {
-      margin-top: 0;
-      color: #1e40af;
+    .role-badge::before {
+      content: '';
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: var(--accent2);
+      animation: pulse 2s ease-in-out infinite;
     }
 
-    a {
-      color: #2563eb;
+    @keyframes pulse {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.5; transform: scale(0.8); }
+    }
+
+    .bio {
+      margin-top: 16px;
+      font-size: 15px;
+      line-height: 1.7;
+      color: var(--muted);
+      max-width: 580px;
+    }
+
+    /* ── SKILLS ── */
+    .skills-section {
+      padding: 8px 0 48px;
+    }
+
+    .skills-wrap {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .skill-tag {
+      padding: 6px 14px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 100px;
+      font-size: 13px;
+      color: var(--muted);
+      transition: all 0.2s;
+    }
+
+    .skill-tag:hover {
+      border-color: rgba(240,192,64,0.4);
+      color: var(--accent);
+      background: rgba(240,192,64,0.05);
+    }
+
+    /* ── SECTION HEADER ── */
+    .section-header {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      margin-bottom: 28px;
+    }
+
+    .section-header h2 {
+      font-family: 'Syne', sans-serif;
+      font-weight: 700;
+      font-size: 22px;
+      color: #fff;
+    }
+
+    .section-line {
+      flex: 1;
+      height: 1px;
+      background: var(--border);
+    }
+
+    /* ── PROJECT GRID ── */
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+      padding-bottom: 80px;
+    }
+
+    @media (max-width: 700px) {
+      .projects-grid { grid-template-columns: 1fr; }
+    }
+
+    .project-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      overflow: hidden;
       text-decoration: none;
-      font-weight: 600;
+      display: block;
+      transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+      position: relative;
     }
 
-    a:hover {
-      text-decoration: underline;
+    .project-card:hover {
+      transform: translateY(-4px);
+      border-color: rgba(240,192,64,0.25);
+      box-shadow: 0 20px 60px rgba(0,0,0,0.5), 0 0 0 1px rgba(240,192,64,0.1);
     }
 
-    ul {
-      padding-left: 20px;
+    /* Screenshot thumbnail */
+    .card-thumb {
+      width: 100%;
+      aspect-ratio: 16/9;
+      overflow: hidden;
+      position: relative;
+      background: #0d0d14;
     }
 
+    .card-thumb img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: top;
+      transition: transform 0.5s ease;
+      display: block;
+    }
+
+    .project-card:hover .card-thumb img {
+      transform: scale(1.04);
+    }
+
+    /* Overlay on hover */
+    .card-thumb::after {
+      content: 'View Project →';
+      position: absolute;
+      inset: 0;
+      background: rgba(10,10,15,0.7);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Syne', sans-serif;
+      font-weight: 700;
+      font-size: 15px;
+      color: var(--accent);
+      letter-spacing: 0.02em;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    .project-card:hover .card-thumb::after {
+      opacity: 1;
+    }
+
+    /* Placeholder for missing screenshots */
+    .card-thumb-placeholder {
+      width: 100%;
+      aspect-ratio: 16/9;
+      background: linear-gradient(135deg, #13131a 0%, #1a1a2e 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+    }
+
+    .card-thumb-placeholder::before {
+      content: '📊';
+      font-size: 48px;
+      opacity: 0.3;
+    }
+
+    /* Card footer */
+    .card-footer {
+      padding: 16px 20px 18px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+    }
+
+    .card-title {
+      font-family: 'Syne', sans-serif;
+      font-weight: 700;
+      font-size: 15px;
+      color: #fff;
+      line-height: 1.3;
+    }
+
+    .card-arrow {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      background: rgba(240,192,64,0.1);
+      border: 1px solid rgba(240,192,64,0.2);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--accent);
+      font-size: 14px;
+      flex-shrink: 0;
+      transition: all 0.2s;
+    }
+
+    .project-card:hover .card-arrow {
+      background: var(--accent);
+      color: #000;
+      transform: rotate(45deg);
+    }
+
+    /* ── FOOTER ── */
     footer {
-      margin-top: 50px;
-      text-align: center;
-      color: #6b7280;
+      border-top: 1px solid var(--border);
+      padding: 32px 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: relative;
+      z-index: 1;
+    }
+
+    .footer-name {
+      font-family: 'Syne', sans-serif;
+      font-size: 13px;
+      color: var(--muted);
+    }
+
+    .footer-links {
+      display: flex;
+      gap: 20px;
+    }
+
+    .footer-links a {
+      color: var(--muted);
+      text-decoration: none;
+      font-size: 13px;
+      font-weight: 500;
+      transition: color 0.2s;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .footer-links a:hover {
+      color: var(--accent);
+    }
+
+    /* Animate cards in */
+    .project-card {
+      opacity: 0;
+      animation: fadeUp 0.5s ease forwards;
+    }
+    .project-card:nth-child(1) { animation-delay: 0.1s; }
+    .project-card:nth-child(2) { animation-delay: 0.2s; }
+    .project-card:nth-child(3) { animation-delay: 0.3s; }
+    .project-card:nth-child(4) { animation-delay: 0.4s; }
+
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    header {
+      opacity: 0;
+      animation: fadeUp 0.6s ease 0.05s forwards;
     }
   </style>
 </head>
-
 <body>
   <div class="container">
 
-    <h1>Pratiksha S</h1>
-    <p><strong>Power BI Data Analyst</strong></p>
-    <p>
-      Proficient in Data Visualization, Reporting, Dashboarding, insight analysis with computer science Engineering background with
-hands on experience in SQL, Excel ,Power BI ,SAP BI. Honing Strong analytical skills ,decision-making ,problem solving abilities
-with learning mindset & proactive approach
-    </p>
+    <!-- HEADER -->
+    <header>
+      <div class="avatar">PS</div>
+      <div class="header-text">
+        <h1>Pratiksha <span>Satale</span></h1>
+        <div class="role-badge">Power BI Data Analyst</div>
+        <p class="bio">
+          Proficient in Data Visualization, Reporting & Dashboarding with a Computer Science Engineering background. Hands-on experience in SQL, Excel, Power BI & SAP BI.
+        </p>
+      </div>
+    </header>
 
-    <div class="skills">
-      <p><strong>Core Skills:</strong></p>
-      <p>
-        Power BI · DAX · SQL · Data Modeling · KPI Analysis · Business Intelligence · Excel
-      </p>
-    </div>
+    <!-- SKILLS -->
+    <section class="skills-section">
+      <div class="skills-wrap">
+        <span class="skill-tag">Power BI</span>
+        <span class="skill-tag">DAX</span>
+        <span class="skill-tag">SQL</span>
+        <span class="skill-tag">Data Modeling</span>
+        <span class="skill-tag">KPI Analysis</span>
+        <span class="skill-tag">Business Intelligence</span>
+        <span class="skill-tag">Excel</span>
+        <span class="skill-tag">SAP BI</span>
+      </div>
+    </section>
 
-    <h2>Projects</h2>
+    <!-- PROJECTS -->
+    <section>
+      <div class="section-header">
+        <h2>Projects</h2>
+        <div class="section-line"></div>
+      </div>
 
-    <div class="project">
-      <h3>Healthcare Sales & Product Analysis</h3>
-      <p>
-        Analyzed healthcare product sales performance, revenue trends,
-        and category-wise contribution using Power BI.
-      </p>
-      <a href="Healthcare-Sales-Analysis/">View Project →</a>
-    </div>
+      <div class="projects-grid">
 
-    <div class="project">
-      <h3>EV Sales Dashboard – AtliQ Motors</h3>
-      <p>
-        Built an interactive EV sales dashboard covering CAGR, market share,
-        state-wise sales, and manufacturer performance.
-      </p>
-      <a href="EV-Sales-Dashboard/">View Project →</a>
-    </div>
+        <!-- Project 1 -->
+        <a class="project-card" href="Healthcare-Sales-Analysis/">
+          <div class="card-thumb">
+            <img src="Healthcare-Sales-Analysis/screenshots/overview.png"
+                 onerror="this.parentElement.classList.add('card-thumb-placeholder'); this.style.display='none'"
+                 alt="Healthcare Sales Dashboard" />
+          </div>
+          <div class="card-footer">
+            <span class="card-title">Healthcare Sales & Product Analysis</span>
+            <span class="card-arrow">↗</span>
+          </div>
+        </a>
 
-    <div class="project">
-      <h3>Employee Productivity Dashboard</h3>
-      <p>
-        Productivity and performance analysis dashboard using behavioral
-        and attendance metrics.
-      </p>
-      <a href="Employee-Productivity-Dashboard/">View Project →</a>
-    </div>
-<div class="project">
-  <h3>Supply Chain Analysis Dashboard</h3>
-  <p>
-    Built an interactive Power BI dashboard to analyze supply chain 
-    performance including order fulfillment,GMV and  with key KPIs and trend analysis.
-  </p>
-  <a href="Supply-chain-Order-Fulfillment-Dashboard/">View Project →</a>
-</div>
-    <footer>
-      <p>
-        <a href="https://github.com/Pratikshasatale">GitHub</a> |
-        <a href="https://www.linkedin.com/in/pratiksha-satale-b37a14108/">LinkedIn</a>
-      </p>
-    </footer>
+        <!-- Project 2 -->
+        <a class="project-card" href="EV-Sales-Dashboard/">
+          <div class="card-thumb">
+            <img src="EV-Sales-Dashboard/screenshots/overview.png"
+                 onerror="this.parentElement.classList.add('card-thumb-placeholder'); this.style.display='none'"
+                 alt="EV Sales Dashboard" />
+          </div>
+          <div class="card-footer">
+            <span class="card-title">EV Sales Dashboard – AtliQ Motors</span>
+            <span class="card-arrow">↗</span>
+          </div>
+        </a>
+
+        <!-- Project 3 -->
+        <a class="project-card" href="Employee-Productivity-Dashboard/">
+          <div class="card-thumb">
+            <img src="Employee-Productivity-Dashboard/screenshots/overview.png"
+                 onerror="this.parentElement.classList.add('card-thumb-placeholder'); this.style.display='none'"
+                 alt="Employee Productivity Dashboard" />
+          </div>
+          <div class="card-footer">
+            <span class="card-title">Employee Productivity Dashboard</span>
+            <span class="card-arrow">↗</span>
+          </div>
+        </a>
+
+        <!-- Project 4 -->
+        <a class="project-card" href="Supply-chain-Order-Fulfillment-Dashboard/">
+          <div class="card-thumb">
+            <img src="Supply-chain-Order-Fulfillment-Dashboard/screenshots/Overview.png"
+                 onerror="this.parentElement.classList.add('card-thumb-placeholder'); this.style.display='none'"
+                 alt="Supply Chain Dashboard" />
+          </div>
+          <div class="card-footer">
+            <span class="card-title">Supply Chain Analysis Dashboard</span>
+            <span class="card-arrow">↗</span>
+          </div>
+        </a>
+
+      </div>
+    </section>
 
   </div>
+
+  <!-- FOOTER -->
+  <div class="container">
+    <footer>
+      <span class="footer-name">© 2025 Pratiksha Satale</span>
+      <div class="footer-links">
+        <a href="https://github.com/Pratikshasatale" target="_blank">
+          <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 21.795 24 17.295 24 12c0-6.63-5.37-12-12-12"/></svg>
+          GitHub
+        </a>
+        <a href="https://www.linkedin.com/in/pratiksha-satale-b37a14108/" target="_blank">
+          <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          LinkedIn
+        </a>
+      </div>
+    </footer>
+  </div>
+
 </body>
 </html>
