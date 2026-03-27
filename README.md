@@ -39,6 +39,11 @@ Dashboard analyzing employee productivity using behavioral and emotion-based met
 
 👉 [View Project](Supply-chain-Order-Fulfillment-Dashboard)
 
+## Customer Churn & CSAT Analytics Dashboard
+Dashboard analyzing customer churn patterns and satisfaction scores to drive retention strategies.
+
+👉 [View Project](Customer-Churn-CSAT-Dashboard)
+
 ## 🛠 Tools & Skills
 - Power BI & SQL Workbench
 - DAX
