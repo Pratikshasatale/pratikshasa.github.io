@@ -26,7 +26,7 @@ and evaluate service quality through CSAT and DSAT scores.
 ![Overview](screenshots/overview.png)
 
 ### Churn Deep Dive
-![Churn Deep Dive](screenshots/churn-Deep-Dive.png)
+![Churn Deep Dive](screenshots/churn_Deep_Dive.png)
 
 ### CSAT & DSAT Analysis
 ![CSAT DSAT](screenshots/CSAT-DSAT.png)
