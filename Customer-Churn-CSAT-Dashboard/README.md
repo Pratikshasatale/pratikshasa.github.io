@@ -8,7 +8,7 @@ India. It helps identify at-risk customers, track repeat vs churned behavior,
 and evaluate service quality through CSAT and DSAT scores.
 
 ## 🔗 Live Dashboard Link
-👉 **[Customer Churn & CSAT Dashboard](https://app.powerbi.com/reportEmbed?reportId=a497ce43-37e0-4390-9ae3-aee4b1155cec&autoAuth=true&ctid=66b1ab0e-93ce-4dcb-a1c9-5645b0675d8e)**
+👉 **[Customer Churn & CSAT Dashboard](https://app.powerbi.com/view?r=eyJrIjoiNjY0YjQzMmYtYzJlYi00NTg3LTk3ODktNGRhZDJhZGVkNGI3IiwidCI6IjY2YjFhYjBlLTkzY2UtNGRjYi1hMWM5LTU2NDViMDY3NWQ4ZSJ9)**
 
 ## 📊 Key Insights
 - **15.36% Churn Rate** with 92 churned out of 599 total customers
