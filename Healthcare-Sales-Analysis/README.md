@@ -5,7 +5,7 @@
 Sales and product performance analysis dashboard designed to track healthcare instrument sales across clients and regions.
 
 ## 🔗 Live Dashboard link
-👉 [Healthcare Equipement Analysis ](https://app.powerbi.com/reportEmbed?reportId=668709b5-d17d-406f-ae6a-f193d189e7e6&autoAuth=true&ctid=66b1ab0e-93ce-4dcb-a1c9-5645b0675d8e)
+👉 [Healthcare Equipement Analysis ](https://app.powerbi.com/view?r=eyJrIjoiODEyYjg1YmYtMWJiNS00Y2Q0LWEzZTctYjZkOWIzMjM3ZWM4IiwidCI6IjY2YjFhYjBlLTkzY2UtNGRjYi1hMWM5LTU2NDViMDY3NWQ4ZSJ9)
 
 ## 📊 Key Insights
 - Product-wise and client-wise sales performance
